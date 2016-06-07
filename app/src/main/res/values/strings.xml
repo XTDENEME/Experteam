@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ExperteamOrnekUygulama</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="select_sinif">Select Class</string>
+    <string-array name="sinif">
+        <item>Sınıf Seçiniz</item>
+        <item>1.Sınıf</item>
+        <item>2.Sınıf</item>
+        <item>3.Sınıf</item>
+        <item>4.sınıf</item>
+        <item>Mezun</item>
+    </string-array>
+
+    <string name="action_yil">Settings</string>
+    <string name="select_yil">Select Class</string>
+    <string-array name="yasGrubu">
+        <item>Yaş Grubu Seçiniz....</item>
+        <item>18 - 25 Yaş grubu aralığı</item>
+        <item>26 - 32 Yaş grubu aralığı</item>
+        <item>33 - 40 Yaş grubu aralığı</item>
+        <item>40 yaş üstü grubu</item>
+    </string-array>
+
+    <string-array name="departman">
+        <item>Departman Seçiniz...</item>
+        <item>Yazılım Geliştirme</item>
+        <item>İnsan Kaynakları</item>
+        <item>Test Otomasyon </item>
+        <item>Diğer....</item>
+    </string-array>
+
+    <string-array name="Unvan">
+        <item>Ünvan Seçiniz...</item>
+        <item>Junior Developer</item>
+        <item>Junior Testçi</item>
+        <item>Senior Developer </item>
+        <item>Diğer....</item>
+    </string-array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

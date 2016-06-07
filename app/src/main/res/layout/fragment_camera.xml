@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ext0132016.navigationdrawervideotutorial.CameraFragment"
+    android:background="@color/highlighted_text_material_dark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Yaz Okulu Bilgileri Kayıt"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:id="@+id/tvAciklma"    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/tvAciklma"
+        android:hint="Adınızı Giriniz" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerHorizontal="true"
+        android:hint="Soyadınızı Giriniz" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etOkul"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Okul Giriniz" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etBolum"
+        android:layout_below="@+id/etOkul"
+        android:layout_centerHorizontal="true"
+        android:hint="Bolum Giriniz" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaçıncı Sınıf?"
+        android:layout_below="@+id/etBolum"
+        android:id="@+id/TVSinif"
+        android:textSize="18dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/TVSinif"
+        android:layout_toStartOf="@+id/tvAciklma" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz90"
+        android:layout_below="@+id/spinner2"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyet Seçiniz?"
+        android:layout_below="@+id/textciz90"
+        android:id="@+id/TVRadio"
+        android:textSize="14dp" />
+
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVRadio"
+        android:orientation="horizontal"  >
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayan"
+            android:layout_below="@+id/etSinif"
+            android:layout_toEndOf="@+id/tvAciklma"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            android:layout_below="@+id/etSinif"
+            android:layout_centerHorizontal="true" />
+        </RadioGroup>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etAciklama"
+        android:layout_below="@+id/radioSex"
+        android:layout_centerHorizontal="true"
+        android:hint="Aciklama Giriniz"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gönder"
+        android:id="@+id/btnOK"
+        android:layout_below="@+id/etAciklama"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ext0132016.navigationdrawervideotutorial.BlankFragment"
+    android:background="#f2df4d">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <AnalogClock
+        android:layout_width="180dp"
+        android:layout_height="164dp"
+        android:id="@+id/analogClock"
+        android:layout_gravity="center" />
+
+</FrameLayout>

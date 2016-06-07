@@ -1,0 +1,212 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ext0132016.navigationdrawervideotutorial.GalleryFragment">
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Experteam Anket Çalışması"
+    android:id="@+id/textAnket"
+    android:layout_alignParentTop="true"
+    android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz1"
+        android:layout_below="@+id/textAnket"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cinsiyetiniz"
+        android:id="@+id/textCinsiyet"
+        android:layout_below="@+id/textciz1"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textCinsiyet"
+        android:orientation="horizontal"  >
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayan"
+            android:layout_below="@+id/etSinif"
+            android:layout_toEndOf="@+id/tvAciklma"
+            android:checked="true"/>
+
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erkek"
+            android:layout_below="@+id/etSinif"
+            android:layout_centerHorizontal="true" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz2"
+        android:layout_below="@+id/radioSex"
+        />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner2"
+        android:layout_below="@+id/textciz2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz3"
+        android:layout_below="@+id/spinner2"
+        />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner3"
+        android:layout_below="@+id/textciz3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz4"
+        android:layout_below="@+id/spinner3"
+        />
+
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner4"
+        android:layout_below="@+id/textciz4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-----------------------------------------------"
+        android:id="@+id/textciz5"
+        android:layout_below="@+id/spinner4"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çalışma Yılı"
+        android:id="@+id/textYil"
+        android:layout_below="@+id/textciz5"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etYil"
+        android:layout_below="@+id/textYil"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aşağıdaki Sosyal Alanlardan Hangisinin Olmasını İstersiniz?"
+        android:id="@+id/textSosyal"
+        android:layout_below="@+id/etYil"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masa Tenisi"
+        android:id="@+id/checkBox"
+        android:layout_toStartOf="@+id/btnAnket"
+        android:layout_below="@+id/textSosyal"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Station"
+        android:id="@+id/checkBox1"
+        android:layout_toRightOf="@id/checkBox"
+        android:layout_below="@+id/textSosyal"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kafeterya"
+        android:id="@+id/checkBox2"
+        android:layout_toRightOf="@id/checkBox1"
+        android:layout_below="@+id/textSosyal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------------------------------------------------------------"
+        android:id="@+id/textciz6"
+        android:layout_below="@+id/checkBox2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aşağıdaki Bonuslardan Hangileri olmalı"
+        android:id="@+id/textBonus"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textciz6" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spor Salonu"
+        android:id="@+id/checkBox4"
+        android:layout_toStartOf="@+id/btnAnket"
+        android:layout_below="@+id/textBonus"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ticket"
+        android:id="@+id/checkBox5"
+        android:layout_toRightOf="@id/checkBox4"
+        android:layout_below="@+id/textBonus"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinema"
+        android:id="@+id/checkBox6"
+        android:layout_toRightOf="@id/checkBox5"
+        android:layout_below="@+id/textBonus"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------------------------------------------------------------"
+        android:id="@+id/textciz7"
+        android:layout_below="@+id/checkBox5"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gönder"
+        android:id="@+id/btnAnket"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+</RelativeLayout>
